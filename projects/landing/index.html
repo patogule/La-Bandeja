@@ -487,6 +487,9 @@
       font-family: var(--font-b); font-size: 11px; font-weight: 500;
       letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-muted); margin-top: var(--sp-sm);
     }
+    .section-cta { margin-top: var(--sp-2xl); }
+    .strip-cta { padding: var(--sp-xl) var(--sp-2xl); text-align: center; background: var(--green-deep); }
+    @media(max-width:800px){ .strip-cta { padding: var(--sp-xl) var(--sp-md); } }
 
     /* About photo column */
     .about-photo-wrap { position: relative; }
@@ -1092,7 +1095,6 @@
     <div class="nav-links">
       <a href="#que-es" class="nav-link">¿Qué es?</a>
       <a href="#como-funciona" class="nav-link">Cómo funciona</a>
-      <a href="#testimonios" class="nav-link">Testimonios</a>
       <a href="#sponsors" class="nav-link">Sponsors</a>
       <a href="#faq" class="nav-link">FAQ</a>
       <a href="#inscribite" class="nav-cta">Inscribite</a>
@@ -1106,7 +1108,6 @@
   <div class="nav-mobile-menu" id="nav-mobile-menu" role="dialog" aria-label="Menú de navegación" aria-modal="true" hidden>
     <a href="#que-es" class="nav-mobile-link"><span class="nav-mobile-num">01</span>¿Qué es?</a>
     <a href="#como-funciona" class="nav-mobile-link"><span class="nav-mobile-num">02</span>Cómo funciona</a>
-    <a href="#testimonios" class="nav-mobile-link"><span class="nav-mobile-num">03</span>Testimonios</a>
     <a href="#sponsors" class="nav-mobile-link"><span class="nav-mobile-num">04</span>Sponsors</a>
     <a href="#faq" class="nav-mobile-link"><span class="nav-mobile-num">05</span>FAQ</a>
     <a href="#inscribite" class="nav-mobile-cta">Inscribite</a>
@@ -1117,8 +1118,8 @@
     <!-- HERO -->
     <section class="hero" aria-label="La Bandeja — Fecha 03">
       <div class="hero-bg-img" aria-hidden="true">
-        <img class="hero-bg-mobile" src="fotos/jugadores/Copia de DSC01403.jpg" alt="">
-        <img class="hero-bg-desktop" src="fotos/ambiente/Copia de DSC01118.jpg" alt="">
+        <img class="hero-bg-mobile" src="fotos-opt/jugadores/Copia de DSC01403.webp" alt="">
+        <img class="hero-bg-desktop" src="fotos-opt/ambiente/Copia de DSC01118.webp" alt="">
       </div>
 <div class="hero-bg-word" aria-hidden="true">Bandeja</div>
       <div class="hero-inner">
@@ -1175,40 +1176,43 @@
             <p class="about-pull-text">"El pádel que querés jugar, la gente que querés ver."</p>
             <p class="about-pull-attr">La Bandeja — desde 2024</p>
           </div>
+          <div class="section-cta reveal d3">
+            <a href="#inscribite" class="btn-primary">Reservar mi lugar</a>
+          </div>
         </div>
         <div class="about-photo-wrap reveal d1">
           <div class="about-photo about-carousel">
-            <img src="fotos/jugadores/Copia de DSC01403.jpg" alt="" loading="lazy" class="active">
-            <img src="fotos/jugadores/Copia de DSC00988.jpg" alt="" loading="lazy">
-            <img src="fotos/jugadores/Copia de DSC01054.jpg" alt="" loading="lazy">
-            <img src="fotos/jugadores/Copia de DSC01078.jpg" alt="" loading="lazy">
-            <img src="fotos/jugadores/Copia de DSC01088.jpg" alt="" loading="lazy">
-            <img src="fotos/jugadores/Copia de DSC01191.jpg" alt="" loading="lazy">
-            <img src="fotos/jugadores/Copia de DSC01212.jpg" alt="" loading="lazy">
-            <img src="fotos/jugadores/Copia de DSC01387.jpg" alt="" loading="lazy">
-            <img src="fotos/jugadores/Copia de DSC01456.jpg" alt="" loading="lazy">
-            <img src="fotos/jugadores/Copia de DSC01466.jpg" alt="" loading="lazy">
-            <img src="fotos/jugadores/Copia de DSC01474.jpg" alt="" loading="lazy">
-            <img src="fotos/jugadores/Copia de DSC01511.jpg" alt="" loading="lazy">
-            <img src="fotos/jugadores/Copia de DSC01523.jpg" alt="" loading="lazy">
-            <img src="fotos/jugadores/Copia de DSC01567.jpg" alt="" loading="lazy">
-            <img src="fotos/jugadores/Copia de DSC01831.jpg" alt="" loading="lazy">
-            <img src="fotos/jugadores/Copia de DSC02016.jpg" alt="" loading="lazy">
-            <img src="fotos/jugadores/Copia de DSC02065.jpg" alt="" loading="lazy">
-            <img src="fotos/jugadores/Copia de DSC02114.jpg" alt="" loading="lazy">
-            <img src="fotos/jugadores/Copia de DSC02149.jpg" alt="" loading="lazy">
-            <img src="fotos/ambiente/Copia de DSC00851.jpg" alt="" loading="lazy">
-            <img src="fotos/ambiente/Copia de DSC00883.jpg" alt="" loading="lazy">
-            <img src="fotos/ambiente/Copia de DSC00928.jpg" alt="" loading="lazy">
-            <img src="fotos/ambiente/Copia de DSC00940.jpg" alt="" loading="lazy">
-            <img src="fotos/ambiente/Copia de DSC00954.jpg" alt="" loading="lazy">
-            <img src="fotos/ambiente/Copia de DSC01064.jpg" alt="" loading="lazy">
-            <img src="fotos/ambiente/Copia de DSC01118.jpg" alt="" loading="lazy">
-            <img src="fotos/ambiente/Copia de DSC01318.jpg" alt="" loading="lazy">
-            <img src="fotos/ambiente/Copia de DSC01401.jpg" alt="" loading="lazy">
-            <img src="fotos/ambiente/Copia de DSC02128.jpg" alt="" loading="lazy">
-            <img src="fotos/ambiente/Copia de DSC06156.jpg" alt="" loading="lazy">
-            <img src="fotos/ambiente/Copia de DSC06253.jpg" alt="" loading="lazy">
+            <img src="fotos-opt/jugadores/Copia de DSC01403.webp" alt="" loading="lazy" class="active">
+            <img src="fotos-opt/jugadores/Copia de DSC00988.webp" alt="" loading="lazy">
+            <img src="fotos-opt/jugadores/Copia de DSC01054.webp" alt="" loading="lazy">
+            <img src="fotos-opt/jugadores/Copia de DSC01078.webp" alt="" loading="lazy">
+            <img src="fotos-opt/jugadores/Copia de DSC01088.webp" alt="" loading="lazy">
+            <img src="fotos-opt/jugadores/Copia de DSC01191.webp" alt="" loading="lazy">
+            <img src="fotos-opt/jugadores/Copia de DSC01212.webp" alt="" loading="lazy">
+            <img src="fotos-opt/jugadores/Copia de DSC01387.webp" alt="" loading="lazy">
+            <img src="fotos-opt/jugadores/Copia de DSC01456.webp" alt="" loading="lazy">
+            <img src="fotos-opt/jugadores/Copia de DSC01466.webp" alt="" loading="lazy">
+            <img src="fotos-opt/jugadores/Copia de DSC01474.webp" alt="" loading="lazy">
+            <img src="fotos-opt/jugadores/Copia de DSC01511.webp" alt="" loading="lazy">
+            <img src="fotos-opt/jugadores/Copia de DSC01523.webp" alt="" loading="lazy">
+            <img src="fotos-opt/jugadores/Copia de DSC01567.webp" alt="" loading="lazy">
+            <img src="fotos-opt/jugadores/Copia de DSC01831.webp" alt="" loading="lazy">
+            <img src="fotos-opt/jugadores/Copia de DSC02016.webp" alt="" loading="lazy">
+            <img src="fotos-opt/jugadores/Copia de DSC02065.webp" alt="" loading="lazy">
+            <img src="fotos-opt/jugadores/Copia de DSC02114.webp" alt="" loading="lazy">
+            <img src="fotos-opt/jugadores/Copia de DSC02149.webp" alt="" loading="lazy">
+            <img src="fotos-opt/ambiente/Copia de DSC00851.webp" alt="" loading="lazy">
+            <img src="fotos-opt/ambiente/Copia de DSC00883.webp" alt="" loading="lazy">
+            <img src="fotos-opt/ambiente/Copia de DSC00928.webp" alt="" loading="lazy">
+            <img src="fotos-opt/ambiente/Copia de DSC00940.webp" alt="" loading="lazy">
+            <img src="fotos-opt/ambiente/Copia de DSC00954.webp" alt="" loading="lazy">
+            <img src="fotos-opt/ambiente/Copia de DSC01064.webp" alt="" loading="lazy">
+            <img src="fotos-opt/ambiente/Copia de DSC01118.webp" alt="" loading="lazy">
+            <img src="fotos-opt/ambiente/Copia de DSC01318.webp" alt="" loading="lazy">
+            <img src="fotos-opt/ambiente/Copia de DSC01401.webp" alt="" loading="lazy">
+            <img src="fotos-opt/ambiente/Copia de DSC02128.webp" alt="" loading="lazy">
+            <img src="fotos-opt/ambiente/Copia de DSC06156.webp" alt="" loading="lazy">
+            <img src="fotos-opt/ambiente/Copia de DSC06253.webp" alt="" loading="lazy">
             <button class="about-carousel-btn about-carousel-prev" aria-label="Foto anterior">&#8249;</button>
             <button class="about-carousel-btn about-carousel-next" aria-label="Foto siguiente">&#8250;</button>
           </div>
@@ -1259,34 +1263,13 @@
         </div>
         <div class="how-photo-wrap reveal d2">
           <div class="how-photo">
-            <img src="fotos/jugadores/Copia de DSC01456.jpg" alt="En cancha — La Bandeja" loading="lazy">
+            <img src="fotos-opt/jugadores/Copia de DSC01456.webp" alt="En cancha — La Bandeja" loading="lazy">
           </div>
           <span class="how-photo-label">En cancha</span>
         </div>
       </div>
     </section>
 
-    <!-- TESTIMONIALS -->
-    <section class="testimonials" id="testimonios">
-      <div class="testimonials-header">
-        <span class="section-tag reveal">Lo que dijeron</span>
-        <h2 class="reveal d1">Los que<br>estuvieron.</h2>
-      </div>
-      <div class="testimonials-grid">
-        <blockquote class="testimonial testimonial-featured reveal d1">
-          <p class="t-text">"Los niveles estaban muy bien armados. Todos los partidos fueron competitivos."</p>
-          <footer class="t-attr">Martín · CABA</footer>
-        </blockquote>
-        <blockquote class="testimonial reveal d2">
-          <p class="t-text">"Me anoté solo y salí con tres personas nuevas para jugar."</p>
-          <footer class="t-attr">Lucas · Buenos Aires</footer>
-        </blockquote>
-        <blockquote class="testimonial reveal d3">
-          <p class="t-text">"El after es la mejor parte. Se nota que no es solo un torneo."</p>
-          <footer class="t-attr">Sofía · Palermo</footer>
-        </blockquote>
-      </div>
-    </section>
 
     <!-- PHOTO STRIP (atmosphere) -->
     <section class="strip-section">
@@ -1297,33 +1280,36 @@
     <div class="photo-strip" role="img" aria-label="Fotos de ambiente de La Bandeja">
       <div class="strip-marquee">
         <div class="strip-track">
-          <div class="strip-item"><img src="fotos/ambiente/Copia de DSC00851.jpg" alt="" loading="lazy"></div>
-          <div class="strip-item"><img src="fotos/ambiente/Copia de DSC00883.jpg" alt="" loading="lazy"></div>
-          <div class="strip-item"><img src="fotos/ambiente/Copia de DSC00928.jpg" alt="" loading="lazy"></div>
-          <div class="strip-item"><img src="fotos/ambiente/Copia de DSC00940.jpg" alt="" loading="lazy"></div>
-          <div class="strip-item"><img src="fotos/ambiente/Copia de DSC00954.jpg" alt="" loading="lazy"></div>
-          <div class="strip-item"><img src="fotos/ambiente/Copia de DSC01064.jpg" alt="" loading="lazy"></div>
-          <div class="strip-item"><img src="fotos/ambiente/Copia de DSC01118.jpg" alt="" loading="lazy"></div>
-          <div class="strip-item"><img src="fotos/ambiente/Copia de DSC01318.jpg" alt="" loading="lazy"></div>
-          <div class="strip-item"><img src="fotos/ambiente/Copia de DSC01401.jpg" alt="" loading="lazy"></div>
-          <div class="strip-item"><img src="fotos/ambiente/Copia de DSC02128.jpg" alt="" loading="lazy"></div>
-          <div class="strip-item"><img src="fotos/ambiente/Copia de DSC06156.jpg" alt="" loading="lazy"></div>
-          <div class="strip-item"><img src="fotos/ambiente/Copia de DSC06253.jpg" alt="" loading="lazy"></div>
-          <div class="strip-item" aria-hidden="true"><img src="fotos/ambiente/Copia de DSC00851.jpg" alt="" loading="lazy"></div>
-          <div class="strip-item" aria-hidden="true"><img src="fotos/ambiente/Copia de DSC00883.jpg" alt="" loading="lazy"></div>
-          <div class="strip-item" aria-hidden="true"><img src="fotos/ambiente/Copia de DSC00928.jpg" alt="" loading="lazy"></div>
-          <div class="strip-item" aria-hidden="true"><img src="fotos/ambiente/Copia de DSC00940.jpg" alt="" loading="lazy"></div>
-          <div class="strip-item" aria-hidden="true"><img src="fotos/ambiente/Copia de DSC00954.jpg" alt="" loading="lazy"></div>
-          <div class="strip-item" aria-hidden="true"><img src="fotos/ambiente/Copia de DSC01064.jpg" alt="" loading="lazy"></div>
-          <div class="strip-item" aria-hidden="true"><img src="fotos/ambiente/Copia de DSC01118.jpg" alt="" loading="lazy"></div>
-          <div class="strip-item" aria-hidden="true"><img src="fotos/ambiente/Copia de DSC01318.jpg" alt="" loading="lazy"></div>
-          <div class="strip-item" aria-hidden="true"><img src="fotos/ambiente/Copia de DSC01401.jpg" alt="" loading="lazy"></div>
-          <div class="strip-item" aria-hidden="true"><img src="fotos/ambiente/Copia de DSC02128.jpg" alt="" loading="lazy"></div>
-          <div class="strip-item" aria-hidden="true"><img src="fotos/ambiente/Copia de DSC06156.jpg" alt="" loading="lazy"></div>
-          <div class="strip-item" aria-hidden="true"><img src="fotos/ambiente/Copia de DSC06253.jpg" alt="" loading="lazy"></div>
+          <div class="strip-item"><img src="fotos-opt/ambiente/Copia de DSC00851.webp" alt="" loading="lazy"></div>
+          <div class="strip-item"><img src="fotos-opt/ambiente/Copia de DSC00883.webp" alt="" loading="lazy"></div>
+          <div class="strip-item"><img src="fotos-opt/ambiente/Copia de DSC00928.webp" alt="" loading="lazy"></div>
+          <div class="strip-item"><img src="fotos-opt/ambiente/Copia de DSC00940.webp" alt="" loading="lazy"></div>
+          <div class="strip-item"><img src="fotos-opt/ambiente/Copia de DSC00954.webp" alt="" loading="lazy"></div>
+          <div class="strip-item"><img src="fotos-opt/ambiente/Copia de DSC01064.webp" alt="" loading="lazy"></div>
+          <div class="strip-item"><img src="fotos-opt/ambiente/Copia de DSC01118.webp" alt="" loading="lazy"></div>
+          <div class="strip-item"><img src="fotos-opt/ambiente/Copia de DSC01318.webp" alt="" loading="lazy"></div>
+          <div class="strip-item"><img src="fotos-opt/ambiente/Copia de DSC01401.webp" alt="" loading="lazy"></div>
+          <div class="strip-item"><img src="fotos-opt/ambiente/Copia de DSC02128.webp" alt="" loading="lazy"></div>
+          <div class="strip-item"><img src="fotos-opt/ambiente/Copia de DSC06156.webp" alt="" loading="lazy"></div>
+          <div class="strip-item"><img src="fotos-opt/ambiente/Copia de DSC06253.webp" alt="" loading="lazy"></div>
+          <div class="strip-item" aria-hidden="true"><img src="fotos-opt/ambiente/Copia de DSC00851.webp" alt="" loading="lazy"></div>
+          <div class="strip-item" aria-hidden="true"><img src="fotos-opt/ambiente/Copia de DSC00883.webp" alt="" loading="lazy"></div>
+          <div class="strip-item" aria-hidden="true"><img src="fotos-opt/ambiente/Copia de DSC00928.webp" alt="" loading="lazy"></div>
+          <div class="strip-item" aria-hidden="true"><img src="fotos-opt/ambiente/Copia de DSC00940.webp" alt="" loading="lazy"></div>
+          <div class="strip-item" aria-hidden="true"><img src="fotos-opt/ambiente/Copia de DSC00954.webp" alt="" loading="lazy"></div>
+          <div class="strip-item" aria-hidden="true"><img src="fotos-opt/ambiente/Copia de DSC01064.webp" alt="" loading="lazy"></div>
+          <div class="strip-item" aria-hidden="true"><img src="fotos-opt/ambiente/Copia de DSC01118.webp" alt="" loading="lazy"></div>
+          <div class="strip-item" aria-hidden="true"><img src="fotos-opt/ambiente/Copia de DSC01318.webp" alt="" loading="lazy"></div>
+          <div class="strip-item" aria-hidden="true"><img src="fotos-opt/ambiente/Copia de DSC01401.webp" alt="" loading="lazy"></div>
+          <div class="strip-item" aria-hidden="true"><img src="fotos-opt/ambiente/Copia de DSC02128.webp" alt="" loading="lazy"></div>
+          <div class="strip-item" aria-hidden="true"><img src="fotos-opt/ambiente/Copia de DSC06156.webp" alt="" loading="lazy"></div>
+          <div class="strip-item" aria-hidden="true"><img src="fotos-opt/ambiente/Copia de DSC06253.webp" alt="" loading="lazy"></div>
         </div>
       </div>
     </div>
+      <div class="strip-cta">
+        <a href="#inscribite" class="btn-primary">Reservar mi lugar</a>
+      </div>
     </section>
 
     <!-- SPONSORS -->
@@ -1333,32 +1319,68 @@
       <div class="sponsor-row-wrap reveal d2">
         <button class="sponsor-nav-btn" id="sponsor-prev" aria-label="Ver anteriores">&#8249;</button>
         <div class="sponsor-photos" id="sponsor-photos">
-          <div class="sponsor-photo"><img src="fotos/marcas/Copia de DSC07179.jpg" alt="" loading="lazy"></div>
-          <div class="sponsor-photo"><img src="fotos/marcas/Copia de DSC01681.jpg" alt="" loading="lazy"></div>
-          <div class="sponsor-photo"><img src="fotos/marcas/Copia de DSC01704.jpg" alt="" loading="lazy"></div>
-          <div class="sponsor-photo"><img src="fotos/marcas/Copia de DSC05666.jpg" alt="" loading="lazy"></div>
-          <div class="sponsor-photo"><img src="fotos/marcas/Copia de DSC01664.jpg" alt="" loading="lazy"></div>
-          <div class="sponsor-photo"><img src="fotos/marcas/Copia de DSC01857.jpg" alt="" loading="lazy"></div>
-          <div class="sponsor-photo"><img src="fotos/marcas/Copia de DSC01686.jpg" alt="" loading="lazy"></div>
-          <div class="sponsor-photo"><img src="fotos/marcas/Copia de DSC01687.jpg" alt="" loading="lazy"></div>
-          <div class="sponsor-photo"><img src="fotos/marcas/Copia de DSC01869.jpg" alt="" loading="lazy"></div>
-          <div class="sponsor-photo"><img src="fotos/marcas/Copia de DSC01888.jpg" alt="" loading="lazy"></div>
-          <div class="sponsor-photo"><img src="fotos/marcas/Copia de DSC01916.jpg" alt="" loading="lazy"></div>
-          <div class="sponsor-photo"><img src="fotos/marcas/Copia de DSC01923.jpg" alt="" loading="lazy"></div>
-          <div class="sponsor-photo"><img src="fotos/marcas/Copia de DSC01927.jpg" alt="" loading="lazy"></div>
-          <div class="sponsor-photo"><img src="fotos/marcas/Copia de DSC05704-2.jpg" alt="" loading="lazy"></div>
-          <div class="sponsor-photo"><img src="fotos/marcas/Copia de DSC05743-2.jpg" alt="" loading="lazy"></div>
-          <div class="sponsor-photo"><img src="fotos/marcas/Copia de DSC06472.jpg" alt="" loading="lazy"></div>
-          <div class="sponsor-photo"><img src="fotos/marcas/Copia de DSC06502.jpg" alt="" loading="lazy"></div>
-          <div class="sponsor-photo"><img src="fotos/marcas/Copia de DSC06503.jpg" alt="" loading="lazy"></div>
-          <div class="sponsor-photo"><img src="fotos/marcas/Copia de DSC06507.jpg" alt="" loading="lazy"></div>
-          <div class="sponsor-photo"><img src="fotos/marcas/Copia de DSC07674.jpg" alt="" loading="lazy"></div>
-          <div class="sponsor-photo"><img src="fotos/marcas/Copia de DSC01112.jpg" alt="" loading="lazy"></div>
-          <div class="sponsor-photo"><img src="fotos/marcas/Copia de DSC01286.jpg" alt="" loading="lazy"></div>
+          <div class="sponsor-photo"><img src="fotos-opt/marcas/Copia de DSC07179.webp" alt="" loading="lazy"></div>
+          <div class="sponsor-photo"><img src="fotos-opt/marcas/Copia de DSC01681.webp" alt="" loading="lazy"></div>
+          <div class="sponsor-photo"><img src="fotos-opt/marcas/Copia de DSC01704.webp" alt="" loading="lazy"></div>
+          <div class="sponsor-photo"><img src="fotos-opt/marcas/Copia de DSC05666.webp" alt="" loading="lazy"></div>
+          <div class="sponsor-photo"><img src="fotos-opt/marcas/Copia de DSC01664.webp" alt="" loading="lazy"></div>
+          <div class="sponsor-photo"><img src="fotos-opt/marcas/Copia de DSC01857.webp" alt="" loading="lazy"></div>
+          <div class="sponsor-photo"><img src="fotos-opt/marcas/Copia de DSC01686.webp" alt="" loading="lazy"></div>
+          <div class="sponsor-photo"><img src="fotos-opt/marcas/Copia de DSC01687.webp" alt="" loading="lazy"></div>
+          <div class="sponsor-photo"><img src="fotos-opt/marcas/Copia de DSC01869.webp" alt="" loading="lazy"></div>
+          <div class="sponsor-photo"><img src="fotos-opt/marcas/Copia de DSC01888.webp" alt="" loading="lazy"></div>
+          <div class="sponsor-photo"><img src="fotos-opt/marcas/Copia de DSC01916.webp" alt="" loading="lazy"></div>
+          <div class="sponsor-photo"><img src="fotos-opt/marcas/Copia de DSC01923.webp" alt="" loading="lazy"></div>
+          <div class="sponsor-photo"><img src="fotos-opt/marcas/Copia de DSC01927.webp" alt="" loading="lazy"></div>
+          <div class="sponsor-photo"><img src="fotos-opt/marcas/Copia de DSC05704-2.webp" alt="" loading="lazy"></div>
+          <div class="sponsor-photo"><img src="fotos-opt/marcas/Copia de DSC05743-2.webp" alt="" loading="lazy"></div>
+          <div class="sponsor-photo"><img src="fotos-opt/marcas/Copia de DSC06472.webp" alt="" loading="lazy"></div>
+          <div class="sponsor-photo"><img src="fotos-opt/marcas/Copia de DSC06502.webp" alt="" loading="lazy"></div>
+          <div class="sponsor-photo"><img src="fotos-opt/marcas/Copia de DSC06503.webp" alt="" loading="lazy"></div>
+          <div class="sponsor-photo"><img src="fotos-opt/marcas/Copia de DSC06507.webp" alt="" loading="lazy"></div>
+          <div class="sponsor-photo"><img src="fotos-opt/marcas/Copia de DSC07674.webp" alt="" loading="lazy"></div>
+          <div class="sponsor-photo"><img src="fotos-opt/marcas/Copia de DSC01112.webp" alt="" loading="lazy"></div>
+          <div class="sponsor-photo"><img src="fotos-opt/marcas/Copia de DSC01286.webp" alt="" loading="lazy"></div>
         </div>
         <button class="sponsor-nav-btn" id="sponsor-next" aria-label="Ver más sponsors">&#8250;</button>
       </div>
       <p class="sponsors-note reveal d3">¿Querés que tu marca esté en la próxima edición? <a href="mailto:hola@labandeja_padel.com.ar">Hablemos.</a></p>
+    </section>
+
+    <!-- INSCRIPTION FORM -->
+    <section class="final-cta" id="inscribite">
+      <div class="final-inner">
+        <span class="final-eyebrow reveal">Fecha 03 · Junio 2026</span>
+        <h2 class="final-title reveal d1">¿Estás<br><em>adentro?</em></h2>
+        <p class="final-body reveal d2">Los cupos son limitados y la primera edición se llenó en 48 horas. Dejá tu nombre y celular y te contactamos para confirmar tu lugar.</p>
+
+        <form class="inscription-form reveal d3" id="form-inscripcion" novalidate>
+          <div class="form-row">
+            <div class="form-field" id="field-nombre">
+              <label class="form-label" for="nombre">Nombre completo</label>
+              <input class="form-input" type="text" id="nombre" name="nombre"
+                     placeholder="Tu nombre" autocomplete="name"
+                     required aria-required="true" aria-describedby="error-nombre">
+              <span class="form-error" id="error-nombre" role="alert">Ingresá tu nombre</span>
+            </div>
+            <div class="form-field" id="field-celular">
+              <label class="form-label" for="celular">Celular</label>
+              <input class="form-input" type="tel" id="celular" name="celular"
+                     placeholder="+54 11 xxxx-xxxx" autocomplete="tel"
+                     required aria-required="true" aria-describedby="error-celular">
+              <span class="form-error" id="error-celular" role="alert">Ingresá tu celular</span>
+            </div>
+          </div>
+          <button type="submit" class="btn-submit">Reservar mi lugar</button>
+          <p class="form-note">Te contactamos por WhatsApp antes de la fecha para confirmar el pago.</p>
+          <p class="form-submit-error" id="form-submit-error" role="alert">Hubo un problema al enviar. Intentá de nuevo o escribinos por Instagram.</p>
+        </form>
+
+        <div class="form-success" id="form-success" hidden role="alert">
+          <p class="form-success-heading">¡Listo!</p>
+          <p class="form-success-body">Te contactamos en las próximas 24 horas por WhatsApp para confirmar tu lugar. <strong>Guardá el número @labandeja_padel</strong> para no perderte el mensaje.</p>
+        </div>
+      </div>
     </section>
 
     <!-- FAQ -->
@@ -1396,42 +1418,6 @@
               <div class="faq-answer-wrap"><p class="faq-answer">Por Instagram es donde sale todo primero. Seguinos en <strong>@labandeja_padel</strong> para no perderte nada. También podés dejarnos tu número acá abajo y te avisamos.</p></div>
             </details>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- INSCRIPTION FORM -->
-    <section class="final-cta" id="inscribite">
-      <div class="final-inner">
-        <span class="final-eyebrow reveal">Fecha 03 · Junio 2026</span>
-        <h2 class="final-title reveal d1">¿Estás<br><em>adentro?</em></h2>
-        <p class="final-body reveal d2">Los cupos son limitados y la primera edición se llenó en 48 horas. Dejá tu nombre y celular y te contactamos para confirmar tu lugar.</p>
-
-        <form class="inscription-form reveal d3" id="form-inscripcion" novalidate>
-          <div class="form-row">
-            <div class="form-field" id="field-nombre">
-              <label class="form-label" for="nombre">Nombre completo</label>
-              <input class="form-input" type="text" id="nombre" name="nombre"
-                     placeholder="Tu nombre" autocomplete="name"
-                     required aria-required="true" aria-describedby="error-nombre">
-              <span class="form-error" id="error-nombre" role="alert">Ingresá tu nombre</span>
-            </div>
-            <div class="form-field" id="field-celular">
-              <label class="form-label" for="celular">Celular</label>
-              <input class="form-input" type="tel" id="celular" name="celular"
-                     placeholder="+54 11 xxxx-xxxx" autocomplete="tel"
-                     required aria-required="true" aria-describedby="error-celular">
-              <span class="form-error" id="error-celular" role="alert">Ingresá tu celular</span>
-            </div>
-          </div>
-          <button type="submit" class="btn-submit">Reservar mi lugar</button>
-          <p class="form-note">Te contactamos por WhatsApp antes de la fecha para confirmar el pago.</p>
-          <p class="form-submit-error" id="form-submit-error" role="alert">Hubo un problema al enviar. Intentá de nuevo o escribinos por Instagram.</p>
-        </form>
-
-        <div class="form-success" id="form-success" hidden role="alert">
-          <p class="form-success-heading">¡Listo!</p>
-          <p class="form-success-body">Te contactamos en las próximas 24 horas por WhatsApp para confirmar tu lugar. <strong>Guardá el número @labandeja_padel</strong> para no perderte el mensaje.</p>
         </div>
       </div>
     </section>
@@ -1645,9 +1631,7 @@
             body: params
           });
         }
-        form.style.display = 'none';
-        success.hidden = false;
-        success.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        window.location.href = 'gracias.html';
       } catch (err) {
         submitBtn.disabled = false;
         submitBtn.textContent = 'Reservar mi lugar';
