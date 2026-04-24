@@ -8,14 +8,14 @@
 
   <!-- Open Graph / WhatsApp / Instagram -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="La Bandeja — Fecha 03 · Buenos Aires">
-  <meta property="og:description" content="El pádel que querés jugar, la gente que querés ver. Cupos limitados — Sábado 15 de Junio 2026.">
+  <meta property="og:title" content="La Bandeja — 3er Edición · Top Padel">
+  <meta property="og:description" content="El pádel que querés jugar, la gente que querés ver. Cupos limitados — Domingo 31 de Mayo 2026.">
   <meta property="og:image" content="assets/og-image.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="La Bandeja — Fecha 03 · Buenos Aires">
-  <meta name="twitter:description" content="El pádel que querés jugar, la gente que querés ver. Cupos limitados — Sábado 15 de Junio 2026.">
+  <meta name="twitter:title" content="La Bandeja — 3er Edición · Top Padel">
+  <meta name="twitter:description" content="El pádel que querés jugar, la gente que querés ver. Cupos limitados — Domingo 31 de Mayo 2026.">
   <meta name="twitter:image" content="assets/og-image.jpg">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -489,6 +489,7 @@
     }
     .section-cta { margin-top: var(--sp-2xl); }
     .strip-cta { padding: var(--sp-xl) var(--sp-2xl); text-align: center; background: var(--green-deep); }
+    .strip-cta-pre { font-family: var(--font-b); font-size: 15px; font-weight: 400; color: var(--text-secondary); margin-bottom: var(--sp-md); }
     @media(max-width:800px){ .strip-cta { padding: var(--sp-xl) var(--sp-md); } }
 
     /* About photo column */
@@ -981,6 +982,8 @@
       transition: border-color 0.2s ease, box-shadow 0.2s ease;
       -webkit-appearance: none;
     }
+    select.form-input { cursor: pointer; background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23556655' stroke-width='1.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 16px center; padding-right: 40px; }
+    select.form-input option { background: var(--surface-dark); color: var(--cream); }
     .form-input::placeholder { color: var(--text-placeholder); }
     .form-input:focus { outline: none; border-color: var(--green-mid); box-shadow: 0 0 0 3px oklch(0.64 0.11 145 / 0.18); }
     .form-input:focus-visible { outline: none; border-color: var(--green-mid); box-shadow: 0 0 0 3px oklch(0.64 0.11 145 / 0.22); }
@@ -996,7 +999,7 @@
     }
     .btn-submit:hover { background: var(--terra-dark); transform: translateY(-3px); box-shadow: 0 16px 40px oklch(0.52 0.14 47 / 0.38); }
     .form-note {
-      font-family: var(--font-b); font-size: 11px; color: var(--text-ghost);
+      font-family: var(--font-b); font-size: 11px; color: var(--text-bright);
       letter-spacing: 0.04em; margin-top: var(--sp-md);
     }
 
@@ -1083,11 +1086,11 @@
   <header class="site-header" id="site-header">
     <!-- Urgency announcement bar -->
     <div class="announce-bar" role="note" aria-label="Información importante">
-      <span class="announce-bar-text">Fecha 03 · 15 de Junio 2026</span>
+      <span class="announce-bar-text">3er edición</span>
       <div class="announce-dot" aria-hidden="true"></div>
-      <span class="announce-bar-text">Cupos limitados</span>
+      <span class="announce-bar-text">Domingo 31 de Mayo 2026</span>
       <div class="announce-dot" aria-hidden="true"></div>
-      <span class="announce-bar-text">Buenos Aires</span>
+      <span class="announce-bar-text">Top Padel, Tortuguitas Point</span>
     </div>
 
   <nav class="nav" id="nav" aria-label="Navegación principal">
@@ -1125,8 +1128,8 @@
       <div class="hero-inner">
 <h1 class="hero-title">La<br><em>Bandeja.</em></h1>
         <div class="hero-meta">
-          <span class="hero-date"><strong>Sábado 15 de Junio</strong> · 2026</span>
-          <span class="hero-date" style="font-size:clamp(15px,2vw,22px)">Buenos Aires</span>
+          <span class="hero-date"><strong>Domingo 31 de Mayo</strong> · 2026</span>
+          <span class="hero-date" style="font-size:clamp(15px,2vw,22px)">Top Padel, Tortuguitas Point</span>
           <span class="hero-spots-badge">Cupos limitados</span>
         </div>
         <div class="hero-cta-row">
@@ -1170,7 +1173,7 @@
           <div class="about-body reveal d2">
             <p>La Bandeja es un evento de pádel en Buenos Aires que combina <strong>competencia real</strong> con el ambiente de una tarde entre amigos.</p>
             <p>El plan es completo: jugás partidos organizados por nivel, conocés marcas nuevas, comés algo, y el after es parte del evento desde el principio.</p>
-            <p>Todo en el mismo lugar, todo el mismo sábado.</p>
+            <p>Todo en el mismo lugar, todo el mismo domingo.</p>
           </div>
           <div class="about-pull reveal d3">
             <p class="about-pull-text">"El pádel de siempre, como nunca lo viviste."</p>
@@ -1235,28 +1238,21 @@
               <span class="step-num" aria-hidden="true">01</span>
               <div class="step-content">
                 <h3 class="step-title">Te inscribís online</h3>
-                <p class="step-body">Completás el formulario antes de la fecha límite. Nos decís tu nivel de juego y si venís con alguien. Sin complicaciones.</p>
+                <p class="step-body">Reservás tu lugar llenando tus datos en el formulario al final de la página.</p>
               </div>
             </div>
             <div class="step reveal d1">
               <span class="step-num" aria-hidden="true">02</span>
               <div class="step-content">
-                <h3 class="step-title">Te armamos los partidos</h3>
-                <p class="step-body">Agrupamos por nivel para que todos jueguen partidos competitivos. Cuatro partidos garantizados durante la mañana.</p>
+                <h3 class="step-title">Confirmás tu cupo</h3>
+                <p class="step-body">Una vez que nos comuniquemos con vos por WhatsApp, confirmás el cupo de tu pareja a través del pago.</p>
               </div>
             </div>
             <div class="step reveal d2">
               <span class="step-num" aria-hidden="true">03</span>
               <div class="step-content">
-                <h3 class="step-title">Llegás el sábado a la mañana</h3>
-                <p class="step-body">El club está reservado para el evento. Todo organizado, sin esperas. Solo llegás y jugás.</p>
-              </div>
-            </div>
-            <div class="step reveal d3">
-              <span class="step-num" aria-hidden="true">04</span>
-              <div class="step-content">
-                <h3 class="step-title">El after es parte del plan</h3>
-                <p class="step-body">Después de los partidos, el evento sigue. Sponsors, premios y el grupo que ya se formó durante la mañana.</p>
+                <h3 class="step-title">Disfrutás de un domingo completo</h3>
+                <p class="step-body">Todo organizado para que vengas a disfrutar de un día lleno de pádel y muchas cosas más.</p>
               </div>
             </div>
           </div>
@@ -1274,7 +1270,7 @@
     <!-- PHOTO STRIP (atmosphere) -->
     <section class="strip-section">
       <div class="strip-header reveal">
-        <span class="section-tag light">Edición 02 · Buenos Aires</span>
+        <span class="section-tag light">Edición 02 · Top Padel</span>
         <h2 class="strip-headline">Así se<br><em>vive.</em></h2>
       </div>
     <div class="photo-strip" role="img" aria-label="Fotos de ambiente de La Bandeja">
@@ -1308,6 +1304,7 @@
       </div>
     </div>
       <div class="strip-cta">
+        <p class="strip-cta-pre">¿Ya estás convencido?</p>
         <a href="#inscribite" class="btn-primary">Reservar mi lugar</a>
       </div>
     </section>
@@ -1344,15 +1341,15 @@
         </div>
         <button class="sponsor-nav-btn" id="sponsor-next" aria-label="Ver más sponsors">&#8250;</button>
       </div>
-      <p class="sponsors-note reveal d3">¿Querés que tu marca esté en la próxima edición? <a href="mailto:hola@labandeja_padel.com.ar">Hablemos.</a></p>
+      <p class="sponsors-note reveal d3">¿Querés que tu marca esté en la próxima edición? <a href="https://wa.me/5491163730035" target="_blank" rel="noopener">Hablemos.</a></p>
     </section>
 
     <!-- INSCRIPTION FORM -->
     <section class="final-cta" id="inscribite">
       <div class="final-inner">
-        <span class="final-eyebrow reveal">Fecha 03 · Junio 2026</span>
+        <span class="final-eyebrow reveal">3er edición · Mayo 2026</span>
         <h2 class="final-title reveal d1">¿Estás<br><em>adentro?</em></h2>
-        <p class="final-body reveal d2">Los cupos son limitados y la primera edición se llenó en 48 horas. Dejá tu nombre y celular y te contactamos para confirmar tu lugar.</p>
+        <p class="final-body reveal d2">Los cupos son limitados. Dejá tu nombre y celular y te contactamos para confirmar tu lugar.</p>
 
         <form class="inscription-form reveal d3" id="form-inscripcion" novalidate>
           <div class="form-row">
@@ -1371,6 +1368,20 @@
               <span class="form-error" id="error-celular" role="alert">Ingresá tu celular</span>
             </div>
           </div>
+          <div class="form-field" id="field-categoria">
+            <label class="form-label" for="categoria">Categoría</label>
+            <select class="form-input" id="categoria" name="categoria" required aria-required="true">
+              <option value="" disabled selected>Seleccioná tu categoría</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+            </select>
+          </div>
           <button type="submit" class="btn-submit">Reservar mi lugar</button>
           <p class="form-note">Te contactamos por WhatsApp antes de la fecha para confirmar el pago.</p>
           <p class="form-submit-error" id="form-submit-error" role="alert">Hubo un problema al enviar. Intentá de nuevo o escribinos por Instagram.</p>
@@ -1378,7 +1389,7 @@
 
         <div class="form-success" id="form-success" hidden role="alert">
           <p class="form-success-heading">¡Listo!</p>
-          <p class="form-success-body">Te contactamos en las próximas 24 horas por WhatsApp para confirmar tu lugar. <strong>Guardá el número @labandeja_padel</strong> para no perderte el mensaje.</p>
+          <p class="form-success-body">Te contactamos lo antes posible por WhatsApp para confirmar el lugar de tu pareja a través del pago.</p>
         </div>
       </div>
     </section>
@@ -1395,26 +1406,22 @@
           <div class="faq-list">
             <details>
               <summary>¿Cuánto cuesta inscribirse? <span class="faq-icon" aria-hidden="true">+</span></summary>
-              <div class="faq-answer-wrap"><p class="faq-answer">El precio de inscripción varía por edición. Lo publicamos con tiempo suficiente. Siempre hay cupos limitados y se llenan rápido — si ya estás en la página, es el momento de anotarte.</p></div>
+              <div class="faq-answer-wrap"><p class="faq-answer">El precio varía según la cantidad de fechas que tenga el evento. Lo avisamos con tiempo.</p></div>
             </details>
             <details>
-              <summary>¿Necesito ir con alguien? <span class="faq-icon" aria-hidden="true">+</span></summary>
-              <div class="faq-answer-wrap"><p class="faq-answer">Para nada. La mayoría viene solo y se va con el grupo. Armamos los partidos para que conozcas gente nueva, no para que juegues siempre con los mismos.</p></div>
+              <summary>¿Cuál es el horario del evento? <span class="faq-icon" aria-hidden="true">+</span></summary>
+              <div class="faq-answer-wrap"><p class="faq-answer">El evento es de un solo día y busca ser full day para aprovecharlo al máximo. Aproximadamente de 12 a 20 hs.</p></div>
             </details>
             <details>
-              <summary>¿Cuál es el nivel requerido? <span class="faq-icon" aria-hidden="true">+</span></summary>
-              <div class="faq-answer-wrap"><p class="faq-answer">El evento es para jugadores con nivel de juego real — no es un clinic para principiantes. Pero tampoco es un torneo pro. Si jugás seguido y te tomás el pádel en serio, estás en el nivel correcto.</p></div>
-            </details>
-            <details>
-              <summary>¿Dónde es el evento? <span class="faq-icon" aria-hidden="true">+</span></summary>
-              <div class="faq-answer-wrap"><p class="faq-answer">Buenos Aires. El club lo confirmamos con los inscriptos antes de la fecha. Siempre es un club con canchas de calidad y espacio para el after.</p></div>
+              <summary>¿Puedo ir con alguien? <span class="faq-icon" aria-hidden="true">+</span></summary>
+              <div class="faq-answer-wrap"><p class="faq-answer">Más que bienvenido. Traé a todos los que quieras para pasarla bien en el evento.</p></div>
             </details>
             <details>
               <summary>¿Qué incluye la entrada? <span class="faq-icon" aria-hidden="true">+</span></summary>
-              <div class="faq-answer-wrap"><p class="faq-answer">Cuatro partidos organizados, sponsors on-site con productos, premios para los mejores de cada grupo, y el after incluido. Venís, jugás, y el evento te cuida el resto.</p></div>
+              <div class="faq-answer-wrap"><p class="faq-answer">Partidos de pádel, juegos con premios, sponsors on-site con productos, premios para los mejores de cada grupo, y el after incluido. Venís, jugás, y el evento te cuida el resto.</p></div>
             </details>
             <details>
-              <summary>¿Cómo me entero de la próxima fecha? <span class="faq-icon" aria-hidden="true">+</span></summary>
+              <summary>¿Cómo me entero de todas las noticias? <span class="faq-icon" aria-hidden="true">+</span></summary>
               <div class="faq-answer-wrap"><p class="faq-answer">Por Instagram es donde sale todo primero. Seguinos en <strong>@labandeja_padel</strong> para no perderte nada. También podés dejarnos tu número acá abajo y te avisamos.</p></div>
             </details>
           </div>
@@ -1613,6 +1620,7 @@
 
       const nombre = document.getElementById('nombre').value.trim();
       const celular = document.getElementById('celular').value.trim();
+      const categoria = document.getElementById('categoria').value;
 
       let valid = true;
       if (!nombre) { setFieldError('nombre', true); valid = false; }
@@ -1624,7 +1632,7 @@
 
       try {
         if (SHEETS_URL && !SHEETS_URL.includes('PASTE_YOUR')) {
-          const params = new URLSearchParams({ nombre, celular });
+          const params = new URLSearchParams({ nombre, celular, categoria });
           await fetch(SHEETS_URL, {
             method: 'POST',
             mode: 'no-cors',
