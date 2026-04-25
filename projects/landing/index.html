@@ -211,7 +211,7 @@
     /* Hamburger button */
     .nav-hamburger {
       display: none; flex-direction: column; justify-content: center; align-items: center;
-      gap: 5px; width: 40px; height: 40px; padding: 0;
+      gap: 5px; width: 44px; height: 44px; padding: 0;
       background: none; border: none; cursor: pointer; flex-shrink: 0;
     }
     .nav-hamburger span {
@@ -510,6 +510,10 @@
       background: linear-gradient(to top, oklch(0.15 0.05 145 / 0.7), transparent);
     }
     .about-caption-text {
+      font-family: var(--font-b); font-size: 10px; font-weight: 600;
+      letter-spacing: 0.16em; text-transform: uppercase; color: var(--terra);
+    }
+    .about-carousel-counter {
       font-family: var(--font-b); font-size: 10px; font-weight: 600;
       letter-spacing: 0.16em; text-transform: uppercase; color: var(--terra);
     }
@@ -1113,15 +1117,15 @@
   <div class="nav-mobile-menu" id="nav-mobile-menu" role="dialog" aria-label="Menú de navegación" aria-modal="true" hidden>
     <a href="#que-es" class="nav-mobile-link"><span class="nav-mobile-num">01</span>¿Qué es?</a>
     <a href="#como-funciona" class="nav-mobile-link"><span class="nav-mobile-num">02</span>Cómo funciona</a>
-    <a href="#sponsors" class="nav-mobile-link"><span class="nav-mobile-num">04</span>Sponsors</a>
-    <a href="#faq" class="nav-mobile-link"><span class="nav-mobile-num">05</span>FAQ</a>
+    <a href="#sponsors" class="nav-mobile-link"><span class="nav-mobile-num">03</span>Sponsors</a>
+    <a href="#faq" class="nav-mobile-link"><span class="nav-mobile-num">04</span>FAQ</a>
     <a href="#inscribite" class="nav-mobile-cta">Inscribite</a>
   </div>
 
   <main id="main-content">
 
     <!-- HERO -->
-    <section class="hero" aria-label="La Bandeja — Fecha 03">
+    <section class="hero" aria-label="La Bandeja — 3er Edición">
       <div class="hero-bg-img" aria-hidden="true">
         <img class="hero-bg-mobile" src="fotos-opt/jugadores/Copia de DSC01403.webp" alt="">
         <img class="hero-bg-desktop" src="fotos-opt/ambiente/Copia de DSC01118.webp" alt="">
@@ -1186,7 +1190,7 @@
           </div>
         </div>
         <div class="about-photo-wrap reveal d1">
-          <div class="about-photo about-carousel">
+          <div class="about-photo about-carousel" aria-roledescription="carrusel">
             <img src="fotos-opt/jugadores/Copia de DSC01403.webp" alt="" loading="lazy" class="active">
             <img src="fotos-opt/jugadores/Copia de DSC00988.webp" alt="" loading="lazy">
             <img src="fotos-opt/jugadores/Copia de DSC01054.webp" alt="" loading="lazy">
@@ -1222,6 +1226,7 @@
             <button class="about-carousel-btn about-carousel-next" aria-label="Foto siguiente">&#8250;</button>
           </div>
           <div class="about-caption">
+            <span class="about-carousel-counter" aria-live="polite" aria-atomic="true">1 / 21</span>
           </div>
         </div>
       </div>
@@ -1390,7 +1395,7 @@
 
         <div class="form-success" id="form-success" hidden role="alert">
           <p class="form-success-heading">¡Listo!</p>
-          <p class="form-success-body">Te contactamos lo antes posible por WhatsApp para confirmar el lugar de tu pareja a través del pago.</p>
+          <p class="form-success-body">Te contactamos lo antes posible por WhatsApp para coordinar el pago y confirmar tu lugar.</p>
         </div>
       </div>
     </section>
@@ -1423,7 +1428,7 @@
             </details>
             <details>
               <summary>¿Cómo me entero de todas las noticias? <span class="faq-icon" aria-hidden="true">+</span></summary>
-              <div class="faq-answer-wrap"><p class="faq-answer">Por Instagram es donde sale todo primero. Seguinos en <strong>@labandeja_padel</strong> para no perderte nada. También podés sumarte a la <a href="https://chat.whatsapp.com/ExhrqXFDQNY6Gctb7mk3cx" target="_blank" rel="noopener">comunidad de WhatsApp</a>.</p></div>
+              <div class="faq-answer-wrap"><p class="faq-answer">Por Instagram es donde sale todo primero. Seguinos en <a href="https://instagram.com/labandeja_padel" target="_blank" rel="noopener"><strong>@labandeja_padel</strong></a> para no perderte nada. También podés sumarte a la <a href="https://chat.whatsapp.com/ExhrqXFDQNY6Gctb7mk3cx" target="_blank" rel="noopener">comunidad de WhatsApp</a>.</p></div>
             </details>
           </div>
         </div>
@@ -1440,7 +1445,7 @@
         <a href="#que-es" class="footer-link">¿Qué es?</a>
         <a href="#como-funciona" class="footer-link">Cómo funciona</a>
         <a href="#faq" class="footer-link">FAQ</a>
-        <a href="mailto:hola@labandeja_padel.com.ar" class="footer-link">Contacto</a>
+        <a href="mailto:labandejaarg@gmail.com" class="footer-link">Contacto</a>
       </nav>
     </div>
     <div class="footer-bottom">
@@ -1537,6 +1542,7 @@
       if (!carousel) return;
       const imgs = Array.from(carousel.querySelectorAll('img'));
       if (!imgs.length) return;
+      const counter = carousel.closest('.about-photo-wrap').querySelector('.about-carousel-counter');
 
       // Fisher-Yates shuffle on index array
       const order = imgs.map((_, i) => i);
@@ -1549,10 +1555,16 @@
       let cur = 0;
       imgs[order[cur]].classList.add('active');
 
+      function updateCounter() {
+        if (counter) counter.textContent = (cur + 1) + ' / ' + order.length;
+      }
+      updateCounter();
+
       function goTo(idx) {
         imgs[order[cur]].classList.remove('active');
         cur = (idx + order.length) % order.length;
         imgs[order[cur]].classList.add('active');
+        updateCounter();
       }
 
       let timer = setInterval(() => goTo(cur + 1), 4500);
